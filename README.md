@@ -90,9 +90,6 @@ Contributions to `creature-shoveler` are welcome! Fork the repository, create yo
 
 This project is licensed under the [MIT License](LICENSE). See the LICENSE file for more details.
 
-```
-
-This template provides a structured overview of `creature-shoveler`, its features, benefits, getting started guide, contribution guidelines, and licensing information. Adjust the content as per your specific project details.
 
 ## Features
 
@@ -151,6 +148,11 @@ $ npm run start
 
 - Hit [http://localhost:3000](http://localhost:3000)
 
+**run tests**
+
+```bash
+$ npm run test
+```
 ### Build
 
 This command will compile for production deployment:

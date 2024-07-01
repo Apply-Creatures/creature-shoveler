@@ -14,7 +14,7 @@
   <h3 align="center">creature-shoveler</h3>
 
    <a href="#">
-      <img src="images/apply-creatures-logo.png" alt="screenshot" width="30%">
+      <img src="images/logo.png" alt="screenshot" width="30%">
    </a>
 
   <p align="center">
@@ -75,18 +75,33 @@ OK, DOkey
 
 Yet another flying shoveler
 
+`creature-shoveler` is a project automation tool designed to streamline the initialising projects. It empowers developers by automating the setup of project structures, reducing (some of the) manual configuration time, and ensuring consistent README.md layouts.
 
-<div align="center">
-   <a href="#">
-      <img src="images/creature-shoveler-logo.png" alt="screenshot">
-   </a>
-</div>
+
+## Why `creature-shoveler`?
+
+Copier is written in Python. Yeoman and other nodejs generators are either dead projects or too overkill, or/and inflexible.
+
+## Contributing
+
+Contributions to `creature-shoveler` are welcome! Fork the repository, create your feature branch, commit your changes, and submit a pull request. Please refer to the [Contributing Guidelines](CONTRIBUTING.md) for more details.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). See the LICENSE file for more details.
+
+```
+
+This template provides a structured overview of `creature-shoveler`, its features, benefits, getting started guide, contribution guidelines, and licensing information. Adjust the content as per your specific project details.
 
 ## Features
 
-* Long tail
-* Short tail
-* 
+- **Template-based Project Creation:** Quickly generate project structures tailored to Node.js, Go, Rust, and Python, including Dockerfile configurations and README templates.
+  
+- **Customizable Templates:** Utilize customizable templates for various project aspects such as README files, Dockerfile, package descriptors, configurations, and more.
+
+- **Prompt-based Configuration:** User-friendly prompts guide users through project setup, allowing customization of project names, descriptions, licenses, and other boring yet important matters.
+
 
 Of course, nothing is perfect, but I will try to keep this up to date and fix issues right here.
 If you've truly tried everything and still can't get this to work for you, try to reach out. Or raise an issue. But I make no promise
@@ -96,12 +111,12 @@ If you've truly tried everything and still can't get this to work for you, try t
 ### Built With
 
 - [node.js](https://nodejs.org/) - of course
-- [someotherthing](https://perdu.com/) - never did before, I almost used another one, but it seems solid
-- 
+- typescript
 
 ### Also using
 
-- 
+- winston
+- enquirer
 
 <hr/>
 
@@ -128,10 +143,8 @@ $ cd ./creature-shoveler && npm install
 
 ### Develop
 
-**Launch in develop mode**
-
 ```bash
-$ npm run develop
+$ npm run start
 ```
 
 **Access via browser**
@@ -157,9 +170,12 @@ $ npm run deploy
 
 ## Roadmap
 
-- [x] Setup a repo with ...
-- [x] Setup ...
-- [ ] And ...
+- [x] Setup a repo with nodejs
+- [x] Write the core logic
+- [x] Templates for nodejs
+- [ ] Test
+- [ ] Templates for Python
+- [ ] Templates for other common tech
 
 <hr/>
 

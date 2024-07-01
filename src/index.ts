@@ -20,7 +20,7 @@ const logFormat = winston.format.combine(
     transports: [new winston.transports.Console()],
   });
 
-const __dirname = '.';
+const _dirname = '.';
 
 const questions = [
   {
@@ -87,7 +87,7 @@ interface Answers {
   orgname: string;
 }
 
-async function main() {
+export async function main() {
   try {
 
     const answers: Answers = await prompt(questions) as Answers;
@@ -100,7 +100,7 @@ async function main() {
   }
 }
 
-function sanitize(text: string): string {
+export function sanitize(text: string): string {
     return text.replace(/[^a-zA-Z0-9-_]/g, '-').replace(/\s+/g, '-');
   }
 
@@ -115,7 +115,7 @@ async function generateProject(answers: Answers) {
 }
 
 async function generateTechFiles(name: string, description: string, license: string, orgname: string, tech: string) {
-  const templateDir = path.join(__dirname, 'templates', tech.toLowerCase());
+  const templateDir = path.join(_dirname, 'templates', tech.toLowerCase());
   const files = fs.readdirSync(templateDir);
 
   for (const file of files) {
@@ -126,12 +126,12 @@ async function generateTechFiles(name: string, description: string, license: str
 }
 
 async function generateReadme(name: string, description: string, license: string, orgname: string) {
-  const readmeTemplatePath = path.join(__dirname, 'templates', 'README.ejs.md');
+  const readmeTemplatePath = path.join(_dirname, 'templates', 'README.ejs.md');
   const readmeDestPath = path.join(process.cwd(), name, 'README.md');
   await renderTemplate(readmeTemplatePath, readmeDestPath, { name, description, license, orgname });
 }
 
-async function renderTemplate(templatePath: string, destPath: string, data: Record<string, unknown>) {
+export async function renderTemplate(templatePath: string, destPath: string, data: Record<string, unknown>) {
   try {
     const str = await ejs.renderFile(templatePath, data);
     fs.mkdirSync(path.dirname(destPath), { recursive: true });

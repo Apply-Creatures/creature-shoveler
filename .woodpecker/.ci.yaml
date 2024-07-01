@@ -1,0 +1,5 @@
+steps:
+  - name: test
+    image: /bin/bash
+    commands:
+      - npm install && npm run build && npm run test

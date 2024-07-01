@@ -1,0 +1,31 @@
+{
+    "name": "<%= name %>",
+    "version": "0.0.1",
+    "description": "<%= description %>",
+    "main": "dist/index.js",
+    "engines": {
+      "node": ">=18.18.2"
+    },
+    "type": "module",
+    "scripts": {
+      "start": "tsc && node dist/index.js",
+      "lint": "biome lint",
+      "test": "echo \"No tests specified\" && exit 0"
+    },
+    "author": "hirako2000",
+    "license": "<%= license %>",
+    "dependencies": {
+    },
+    "devDependencies": {
+      "@types/node": "^20.14.9",
+      "typescript": "^5.5.2"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/<%= orgname %>/<%= name %>"
+    },
+    "bugs": {
+      "url": "https://github.com/<%= orgname %>/<%= name %>/issues"
+    },
+    "homepage": "https://github.com/<%= orgname %>/<%= name %>#readme"
+}

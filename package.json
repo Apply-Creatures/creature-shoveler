@@ -1,0 +1,56 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "description": "Description of your project.",
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=18.0",
+    "npm": ">=7.0.0"
+  },
+  "type": "module",
+  "scripts": {
+    "prestart": "npm run build",
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "lint:check": "biome lint --check",
+    "lint:fix": "biome lint --fix",
+    "lint": "biome lint --fix",
+    "format:check": "biome format --check",
+    "format:fix": "biome format --fix",
+    "format": "npm run format:fix",
+    "test": "npm run lint:check and npm run format:check",
+    "prepare": "npm run build"
+  },
+  "author": "hirako2000",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "enquirer": "^2.4.1",
+    "fs-extra": "^11.2.0",
+    "ts-node": "^10.9.2",
+    "winston": "^3.13.0"
+  },
+  "devDependencies": {
+    "@types/ejs": "^3.1.5",
+    "@types/node": "^20.14.9",
+    "biome": "^0.3.3",
+    "esm": "^3.2.25",
+    "typescript": "^5.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apply-creatures/creature-shoveler"
+  },
+  "bugs": {
+    "url": "https://github.com/apply-creatures/creature-shoveler/issues"
+  },
+  "homepage": "https://github.com/apply-creatures/creature-shoveler#readme",
+  "keywords": [
+    "project-generator",
+    "templates",
+    "automation",
+    "typescript",
+    "nodejs",
+    "biome"
+  ]
+}

@@ -213,7 +213,7 @@ It would never end. I've done this work not just off dozens of other people's op
 <!-- Refs -->
 
 [codacy-url]: https://app.codacy.com/gh/apply-creatures/creature-shoveler/dashboard
-[codacy-shield]: https://img.shields.io/codacy/grade/appid?style=for-the-badge
+[codacy-shield]: https://img.shields.io/codacy/grade/d51d2c336a1d431dac468829d5e3bdc6?style=for-the-badge
 [contributors-shield]: https://img.shields.io/github/contributors/apply-creatures/creature-shoveler.svg?style=for-the-badge
 [contributors-url]: https://github.com/apply-creatures/creature-shoveler/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/apply-creatures/creature-shoveler.svg?style=for-the-badge

@@ -2,4 +2,4 @@ steps:
   - name: test
     image: /bin/bash
     commands:
-      - /home/root/.bun/bin/bun install && /home/root/.bun/bin/bun run build && /home/root/.bun/bin/bun run test
+      - /root/.bun/bin/bun install && /root/.bun/bin/bunrun build && /root/.bun/bin/bun run test

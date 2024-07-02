@@ -11,7 +11,7 @@
   "scripts": {
     "prestart": "bun run build",
     "start": "bun dist/index.js",
-    "build": "bun run tsc",
+    "build": "tsc",
     "lint:check": "biome lint --check",
     "lint:fix": "biome lint --fix",
     "lint": "biome lint --fix",

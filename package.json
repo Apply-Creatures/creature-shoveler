@@ -9,18 +9,18 @@
   },
   "type": "module",
   "scripts": {
-    "prestart": "npm run build",
-    "start": "node dist/index.js",
+    "prestart": "bun run build",
+    "start": "bun dist/index.js",
     "build": "tsc",
     "lint:check": "biome lint --check",
     "lint:fix": "biome lint --fix",
     "lint": "biome lint --fix",
     "format:check": "biome format --check",
     "format:fix": "biome format --fix",
-    "format": "npm run format:fix",
-    "pretest": "npm run lint:check and npm run format:check",
+    "format": "bun run format:fix",
+    "pretest": "bun run lint:check && bun run format:check",
     "test": "jest --config=jest.config.js --detectOpenHandles --forceExit",
-    "prepare": "npm run build"
+    "prepare": "bun run build"
   },
   "author": "hirako2000",
   "license": "MIT",

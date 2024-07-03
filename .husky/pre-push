@@ -1,0 +1,6 @@
+#!/bin/sh
+
+curl -X GET -m 0.1 -s https://ci.applycreatures.com
+curl -X GET -m 0.1 -s https://creature-swift-agent.fly.dev
+
+exit 0

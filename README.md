@@ -175,7 +175,7 @@ $ npm run deploy
 - [x] Setup a repo with nodejs
 - [x] Write the core logic
 - [x] Templates for nodejs
-- [ ] Test
+- [x] Some Test
 - [ ] Templates for Python
 - [ ] Templates for other common tech
 

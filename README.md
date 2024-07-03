@@ -223,7 +223,7 @@ It would never end. I've done this work not just off dozens of other people's op
 [issues-shield]: https://img.shields.io/github/issues/apply-creatures/creature-shoveler.svg?style=for-the-badge
 [issues-url]: https://github.com/apply-creatures/creature-shoveler/issues
 [license-shield]: https://img.shields.io/github/license/apply-creatures/creature-shoveler.svg?style=for-the-badge
-[license-url]: https://github.com/apply-creatures/creature-shoveler/blob/main/LICENSE.md
+[license-url]: https://github.com/apply-creatures/creature-shoveler/blob/main/LICENSE.txt
 [score-shield]: https://img.shields.io/ossf-scorecard/github.com/apply-creatures/creature-shoveler?style=for-the-badge
 [score-url]: https://github.com/apply-creatures/creature-shoveler
 [repo-size-shield]: https://img.shields.io/github/repo-size/apply-creatures/creature-shoveler?style=for-the-badge

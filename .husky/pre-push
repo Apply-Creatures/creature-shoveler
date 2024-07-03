@@ -1,6 +1,6 @@
 #!/bin/sh
 
-curl -X GET -m 0.2 -s https://ci.applycreatures.com
-curl -X GET -m 1 -s https://creature-swift-agent.fly.dev
+curl -X GET -m 1 -s https://ci.applycreatures.com &
+curl -X GET -m 1 -s https://creature-swift-agent.fly.dev &
 echo  "Kicked up the CI and Agent"
 exit 0

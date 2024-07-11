@@ -7,6 +7,7 @@
 [![Contributors][contributors-shield]][contributors-url]
 [![license][license-shield]][license-url]
 [![ci][ci-shield]][ci-url]
+[![OpenSSF Best Practices](floss-shield)](floss-url)
 
 <!-- PROJECT LOGO -->
 <br />
@@ -232,6 +233,8 @@ It would never end. I've done this work not just off dozens of other people's op
 [product-screenshot]: images/apply-creatures-logo.png
 [ci-shield]: https://ci.applycreatures.com/api/badges/2/status.svg
 [ci-url]: https://ci.applycreatures.com/repos/2
+[floss-shield]: https://www.bestpractices.dev/projects/9198/badge?style=for-the-badge
+[floss-url]: https://www.bestpractices.dev/projects/9198
 
 ## Changelog
 

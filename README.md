@@ -7,7 +7,7 @@
 [![Contributors][contributors-shield]][contributors-url]
 [![license][license-shield]][license-url]
 [![ci][ci-shield]][ci-url]
-[![OpenSSF Best Practices](floss-shield)](floss-url)
+[![OpenSSF Best Practices][floss-shield]][floss-url]
 
 <!-- PROJECT LOGO -->
 <br />

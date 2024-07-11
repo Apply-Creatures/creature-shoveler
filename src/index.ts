@@ -144,4 +144,9 @@ export async function renderTemplate(templatePath: string, destPath: string, dat
   }
 }
 
-main();
+
+const asyncMain = async () => {
+    await main();
+};
+
+asyncMain();

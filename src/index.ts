@@ -149,4 +149,8 @@ const asyncMain = async () => {
     await main();
 };
 
-asyncMain();
+asyncMain().catch(error => {
+    if (error instanceof Error) {
+        logger.error(`An Error occured: ${error.stack}`);
+    }
+});

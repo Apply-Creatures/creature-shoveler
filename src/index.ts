@@ -144,4 +144,13 @@ export async function renderTemplate(templatePath: string, destPath: string, dat
   }
 }
 
-main();
+
+const asyncMain = async () => {
+    await main();
+};
+
+asyncMain().catch(error => {
+    if (error instanceof Error) {
+        logger.error(`An Error occured: ${error.stack}`);
+    }
+});

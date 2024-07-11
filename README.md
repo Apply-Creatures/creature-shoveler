@@ -6,6 +6,7 @@
 [![repo-size][repo-size-shield]][repo-size-url]
 [![Contributors][contributors-shield]][contributors-url]
 [![license][license-shield]][license-url]
+[![ci][ci-shield]][ci-url]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -229,6 +230,8 @@ It would never end. I've done this work not just off dozens of other people's op
 [repo-size-shield]: https://img.shields.io/github/repo-size/apply-creatures/creature-shoveler?style=for-the-badge
 [repo-size-url]: https://github.com/apply-creatures/creature-shoveler/archive/refs/heads/main.zip
 [product-screenshot]: images/apply-creatures-logo.png
+[ci-shield]: https://ci.applycreatures.com/api/badges/2/status.svg
+[ci-url]: https://ci.applycreatures.com/repos/2
 
 ## Changelog
 

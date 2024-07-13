@@ -1,0 +1,20 @@
+[project]
+name = "<%= name %>"
+version = "0.1.0"
+description = "<%= description %>"
+authors = ["<%= orgname %>"]
+license = "<%= license %>"
+readme = "README.md"
+requires-python = ">=3.8"
+homepage = "https://github.com/<%= orgname %>/<%= name %>"
+repository = "https://github.com/<%= orgname %>/<%= name %>"
+keywords = ["keyword1", "keyword2", "keyword3"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[dependencies]
+uv = "^0.2.24"
+ruff = "^0.5.1"

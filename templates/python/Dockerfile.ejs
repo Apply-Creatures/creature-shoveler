@@ -1,21 +1,20 @@
-# Use an official Node.js runtime as a parent image
-FROM node:18-alpine AS node
+# Use the official Python image from the Docker Hub
+FROM python:3.11-slim
 
-# Set the working directory in the container
-WORKDIR /app
+# Set the working directory
+WORKDIR /<%= name %>
 
-# Copy package.json and package-lock.json to the working directory
-COPY package*.json ./
-COPY package-lock.json ./
+# Install UV
+RUN curl -LsSf https://astral.sh/uv/install.sh | sh
 
-# Install dependencies
-RUN npm install
-
-# Copy the rest of the application code to the working directory
+# Copy the application code
 COPY . .
 
-# Expose the internal port listened by the application
-EXPOSE 3000
+# Create a virtual environment
+RUN uv venv
 
-# Command to run the application
-CMD ["npm", "start"]
+# Activate the virtual environment and install dependencies
+RUN .venv/bin/activate && uv pip install .
+
+# Specify the command to run the application
+CMD ["sh", "-c", ".venv/bin/activate && python app.py"]

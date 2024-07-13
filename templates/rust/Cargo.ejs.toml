@@ -1,0 +1,43 @@
+[package]
+name = "<%= name %>"
+version = "0.1.0"
+authors = ["<%= orgname %>"]
+edition = "2021"
+
+description = "<%= description %>"
+homepage = "https://github.com/<%= orgname %>/<%= name %>"
+repository = "https://github.com/<%= orgname %>/<%= name %>"
+documentation = "https://github.com/<%= orgname %>/<%= name %>"
+readme = "README.md"
+license-file = "<%= license %>"
+
+publish = false
+
+[workspace]
+
+[lib]
+name = "<%= name %>"
+path = "src/lib.rs"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[features]
+default = []
+
+[dependencies]
+
+[dev-dependencies]
+
+[build]
+
+
+[profile.dev]
+debug = true
+lto = false
+optimize = false
+panic = "abort"
+
+[profile.release]
+debug = false
+lto = true
+optimize = true
+panic = "abort"
